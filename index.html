@@ -1,13 +1,51 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwind-template</title>
-  </head>
-  <body>
-    <div id="app"></div>
+    <title>The AI Crypt | Positive Tech News</title>
     <script type="module" src="/src/main.js"></script>
+  </head>
+
+
+  <body>
+
+    <nav class="sticky top-4 z-50 mx-4 bg-background/10 backdrop-blur-lg border border-background/10 rounded-2xl shadow-2xl">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between h-20 items-center">
+
+      <span class="text-2xl  bg-linear-30 from-primary/55 to-accent bg-clip-text text-transparent tracking-tighter">
+        THE GOOD TECH
+      </span>
+
+      <div class="hidden md:flex space-x-8 items-center font-medium">
+        <a href="#" class="bg-linear-30 from-primary/55 to-accent  text-text-colour px-4 py-2 rounded-full hover:scale-105 transition-transform">The AI</a>
+        <a href="#" class="bg-linear-30 from-primary/55 to-accent  text-text-colour px-4 py-2 rounded-full hover:scale-105 transition-transform">The Crypto</a>
+        <a href="#" class="bg-linear-30 from-primary/55 to-accent text-text-colour px-4 py-2 rounded-full hover:scale-105 transition-transform">The Odd</a>
+        <a href="#" class="bg-linear-30 from-primary/55 to-accent  text-text-colour px-4 py-2 rounded-full hover:scale-105 transition-transform">The Breakthroughs</a>
+      </div>
+
+      <details class="md:hidden group">
+        <summary class="p-2 rounded-xl hover:bg-background/5 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fdfcf8" class="size-7 group-open:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fdfcf8" class="size-7 hidden group-open:block">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </summary>
+        <div class="absolute left-0 right-0 top-20 bg-background/95 rounded-b-2xl">
+          <div class="flex flex-col space-y-1 p-6 border-t border-background/10">
+            <a href="#" class="text-text-colour text-lg py-3 border-b border-background/5 hover:text-primary">The AI</a>
+            <a href="#" class="text-text-colour text-lg py-3 border-b border-background/5 hover:text-primary">The Crypto</a>
+            <a href="#" class="text-text-colour text-lg py-3 border-b border-background/5 hover:text-primary">The Odd</a>
+            <a href="#" class="text-text-colour text-lg py-3 border-b border-background/5 hover:text-primary">The Breakthroughs</a>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</nav>
   </body>
 </html>
