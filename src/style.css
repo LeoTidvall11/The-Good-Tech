@@ -8,4 +8,21 @@
   --color-accent: #9bb26a; 
   --color-background: #1a1c18; 
   --color-text-colour: #fdfcf8; 
+  --color-primary-light: #7BA9B0;
+  --color-secondary-light: #8A6252;
+  --color-accent-light: #88A055;
+  --color-background-light: #FDFCF8;
+  --color-text-light: #1A1C18;
+
+
+}
+@layer components {
+  .heading-gradient {
+    @apply bg-linear-30 from-primary-light to-accent-light bg-clip-text text-transparent tracking-tighter;
+  }
+
+  .headers {
+    @apply text-2xl  bg-linear-30 from-primary-light to-accent-light bg-clip-text text-transparent tracking-tighter;
+
+  }
 }
