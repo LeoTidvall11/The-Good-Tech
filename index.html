@@ -1,69 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Good Tech | Positive Tech News</title>
-    
     <script type="module" src="/src/main.js"></script>
   </head>
 
+  <body class="bg-brand-cream text-brand-dark">
+    <div
+      class="bg-brand-yellow border-brand-dark/10 flex items-center justify-between border-b px-4 py-2 md:grid md:grid-cols-3"
+    >
+      <div class="hidden md:block"></div>
 
-  <body class="bg-background-light">
-    <div class="flex bg-primary items-center border-b-2 px-4 py-2 justify-between">
-      <div>
-        <h1>The Good Tech</h1>
+      <div class="flex md:justify-center">
+        <h1 class="text-xl font-bold whitespace-nowrap">The Good Tech</h1>
       </div>
-      <div class="">
-        <button class="px-4 py-2 text-text-light hover:bg-primary-dark bg-secondary-light rounded-4xl">Subscribe</button>      
-        <button class="px-4 py-2 text-text-light hover:bg-primary-dark bg-secondary-light rounded-4xl">Login</button>
+
+      <div class="flex items-center justify-end gap-4">
+        <button
+          class="bg-brand-dark rounded-3xl px-4 py-2 text-sm font-medium text-white transition-all hover:opacity-90"
+        >
+          Subscribe
+        </button>
+        <button
+          class="bg-brand-dark rounded-3xl px-4 py-2 text-sm font-medium text-white transition-all hover:opacity-90"
+        >
+          Login
+        </button>
       </div>
     </div>
-      <nav class="flex bg-primary items-center justify-center gap-4 px-4 py-2 sticky top-0 z-10">
-        <div class="relative flex items-center">
-          <div class="absolute left-3 flex items-center pointer-events-none text-text-light/60">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-      </svg>
-    </div>
-  <input 
-    type="text" 
-    placeholder="Search..." 
-    class="h-11 w-11 focus:w-64 transition-all duration-500 ease-in-out 
-           rounded-full bg-background-light 
-           pl-11 pr-4 outline-none border border-transparent focus:border-primary 
-           cursor-pointer focus:cursor-text 
-           placeholder:opacity-0 focus:placeholder:opacity-100" 
-  />
-        </div>
-        <div class="flex overflow-auto flex-nowrap gap-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-        <a href="#" class="px-4 py-2 text-text-light hover:bg-primary-dark rounded">AI</a>
-        <a href="#" class="px-4 py-2 text-text-light hover:bg-primary-dark rounded">Crypto</a>
-        <a href="#" class="px-4 py-2 text-text-light hover:bg-primary-dark rounded">Odd</a>
-        <a href="#" class="px-4 py-2 text-text-light hover:bg-primary-dark rounded">Breakthroughs</a>
-        <a href="#" class="px-4 py-2 text-text-light hover:bg-primary-dark rounded">Latest</a>
-        <a href="#" class="px-4 py-2 text-text-light hover:bg-primary-dark rounded">Happiest</a>
-        <a href="#" class="px-4 py-2 text-text-light hover:bg-primary-dark rounded">About</a>
-        <a href="#" class="px-4 py-2 text-text-light hover:bg-primary-dark rounded">Archive</a>
-        </div>
-      </nav>
-      <main>
-        <div class="flex flex-col items-center py-8">
-    <div class="relative flex flex-col bg-primary-light/10 rounded-lg overflow-hidden m-4 w-96"> 
-      
-      <img src="src/bild.exempel.jpg" alt="Article image" class="w-full h-48 object-cover">
 
-      <span class="absolute top-2 left-2 bg-yellow-300 text-text-light text-xs font-bold px-2 py-1 rounded">
-        AI
-      </span>
-
-      <div class="p-4 flex flex-col gap-2 ">
-        <p class="text-sm opacity-70">Published: 2026-03-18</p>
-        <h3 class="text-xl font-bold">New article!</h3>
-        <p>Lorem Ipsum ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <nav
+      class="bg-brand-yellow/90 border-brand-dark/5 sticky top-0 z-10 flex items-center justify-center gap-4 border-b px-4 py-2 backdrop-blur-md"
+    >
+      <div class="relative flex items-center">
+        <div
+          class="text-brand-dark/50 pointer-events-none absolute left-3 flex items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </div>
+        <input
+          type="text"
+          placeholder="Search for good news..."
+          class="focus:border-brand-dark/10 placeholder:text-brand-dark/40 h-10 w-10 cursor-pointer rounded-full border border-transparent bg-white/50 pr-4 pl-10 transition-all duration-500 ease-in-out outline-none placeholder:opacity-0 focus:w-64 focus:cursor-text focus:bg-white focus:shadow-md focus:placeholder:opacity-100"
+        />
       </div>
 
-      </main>
-    </body>
-</body>
+      <div
+        class="flex snap-x flex-nowrap gap-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
+        <a
+          href="#"
+          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
+          >AI</a
+        >
+        <a
+          href="#"
+          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
+          >Crypto</a
+        >
+        <a
+          href="#"
+          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
+          >Odd</a
+        >
+        <a
+          href="#"
+          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
+          >Breakthroughs</a
+        >
+        <a
+          href="#"
+          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
+          >Latest</a
+        >
+        <a
+          href="#"
+          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
+          >Happiest</a
+        >
+        <a
+          href="#"
+          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
+          >About</a
+        >
+        <a
+          href="#"
+          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
+          >Archive</a
+        >
+      </div>
+    </nav>
+
+    <main
+      class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-8 md:grid-cols-12"
+    >
+      <section class="flex flex-col items-center lg:col-span-8">
+        <h2 class="text-brand-dark mb-2 text-3xl font-bold lg:text-4xl">
+          Latest News
+        </h2>
+        <p class="text-brand-dark/70 mb-8 text-center text-lg">
+          Stay updated with the latest positive tech news and breakthroughs.
+        </p>
+
+        <div class="grid w-full grid-cols-1 gap-6 sm:grid-cols-2">
+          <div
+            class="border-brand-beige relative flex flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-shadow hover:shadow-md"
+          >
+            <img
+              src="src/bild.exempel.jpg"
+              alt="Article image"
+              class="h-48 w-full object-cover"
+            />
+            <span
+              class="bg-brand-yellow text-brand-dark absolute top-3 left-3 rounded px-2 py-1 text-xs font-bold shadow-sm"
+              >AI</span
+            >
+            <div class="flex flex-col gap-2 p-5">
+              <p
+                class="text-brand-dark/50 text-xs font-medium tracking-wider uppercase"
+              >
+                2026-03-18
+              </p>
+              <h3 class="text-xl leading-tight font-bold">New article!</h3>
+              <p class="text-brand-dark/80 text-sm">
+                Lorem Ipsum ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="border-brand-beige relative flex flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-shadow hover:shadow-md"
+          >
+            <img
+              src="src/bild.exempel.jpg"
+              alt="Article image"
+              class="h-48 w-full object-cover"
+            />
+            <span
+              class="bg-brand-yellow text-brand-dark absolute top-3 left-3 rounded px-2 py-1 text-xs font-bold shadow-sm"
+              >AI</span
+            >
+            <div class="flex flex-col gap-2 p-5">
+              <p
+                class="text-brand-dark/50 text-xs font-medium tracking-wider uppercase"
+              >
+                2026-03-18
+              </p>
+              <h3 class="text-xl leading-tight font-bold">New article!</h3>
+              <p class="text-brand-dark/80 text-sm">
+                Lorem Ipsum ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="flex flex-col lg:col-span-4">
+        <div class="sticky top-24">
+          <h2 class="text-brand-dark mb-2 text-2xl font-bold">Categories</h2>
+          <p class="text-brand-dark/70 mb-6">Browse news by category.</p>
+
+          <div class="flex flex-col gap-4">
+            <div
+              class="bg-brand-yellow rounded-lg p-1 text-center text-sm font-bold tracking-widest uppercase"
+            >
+              AI Highlights
+            </div>
+
+            <a href="#" class="group">
+              <div
+                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
+              >
+                <img
+                  src="src/bild.exempel.jpg"
+                  alt="Small"
+                  class="h-20 w-20 rounded-lg object-cover"
+                />
+                <div class="flex flex-col justify-center">
+                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
+                    March 18
+                  </p>
+                  <h4
+                    class="group-hover:text-brand-accent line-clamp-2 text-sm font-bold transition-colors"
+                  >
+                    The future of AI looks brighter than ever
+                  </h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="group">
+              <div
+                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
+              >
+                <img
+                  src="src/bild.exempel.jpg"
+                  alt="Small"
+                  class="h-20 w-20 rounded-lg object-cover"
+                />
+                <div class="flex flex-col justify-center">
+                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
+                    March 17
+                  </p>
+                  <h4
+                    class="group-hover:text-brand-accent line-clamp-2 text-sm font-bold transition-colors"
+                  >
+                    New breakthrough in green energy tech
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
 </html>
