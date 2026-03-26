@@ -11,5 +11,21 @@
   --color-brand-dark: #1f2937;
   --color-brand-text-muted: #4b5563;
 }
-@layer components {
+
+@layer utilities {
+  .link-underline {
+    background-image: linear-gradient(
+      var(--color-brand-yellow),
+      var(--color-brand-yellow)
+    );
+
+    background-size: 0% 40%;
+    background-position: 0% 85%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+  }
+
+  .group:hover .link-underline {
+    background-size: 100% 40%;
+  }
 }
