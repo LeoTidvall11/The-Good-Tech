@@ -10,7 +10,7 @@
   <body class="bg-brand-cream text-brand-dark font-body">
     <!-- ===================== HEADER ===================== -->
     <!-- Topbar med logotyp, prenumerera- och login-knappar -->
-    <div
+    <header
       class="bg-brand-yellow border-brand-dark/10 flex items-center justify-between border-b px-4 py-2 md:grid md:grid-cols-3"
     >
       <!-- Tomt utrymme för centrering av logotypen på desktop -->
@@ -18,25 +18,17 @@
 
       <!-- Logotyp -->
       <div class="flex md:justify-center">
-        <h1 class="font-display text-xl font-black whitespace-nowrap italic">
+        <h1 class="font-display text-4xl font-black whitespace-nowrap italic">
           The Good Tech
         </h1>
       </div>
 
       <!-- Knappar: Subscribe & Login -->
       <div class="flex items-center justify-end gap-4">
-        <button
-          class="bg-brand-dark rounded-3xl px-4 py-2 text-sm font-medium text-white transition-all hover:opacity-90"
-        >
-          Subscribe
-        </button>
-        <button
-          class="bg-brand-dark rounded-3xl px-4 py-2 text-sm font-medium text-white transition-all hover:opacity-90"
-        >
-          Login
-        </button>
+        <button class="btn">Subscribe</button>
+        <button class="btn">Login</button>
       </div>
-    </div>
+    </header>
     <!-- ===================== /HEADER ===================== -->
 
     <!-- ===================== NAVBAR ===================== -->
@@ -75,46 +67,14 @@
       <div
         class="flex snap-x flex-nowrap gap-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
-        <a
-          href="#"
-          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
-          >AI</a
-        >
-        <a
-          href="#"
-          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
-          >Crypto</a
-        >
-        <a
-          href="#"
-          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
-          >Odd</a
-        >
-        <a
-          href="#"
-          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
-          >Breakthroughs</a
-        >
-        <a
-          href="#"
-          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
-          >Latest</a
-        >
-        <a
-          href="#"
-          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
-          >Happiest</a
-        >
-        <a
-          href="#"
-          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
-          >About</a
-        >
-        <a
-          href="#"
-          class="snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30"
-          >Archive</a
-        >
+        <a href="#" class="nav">AI</a>
+        <a href="#" class="nav">Crypto</a>
+        <a href="#" class="nav">Odd</a>
+        <a href="#" class="nav">Breakthroughs</a>
+        <a href="#" class="nav">Latest</a>
+        <a href="#" class="nav">Happiest</a>
+        <a href="#" class="nav">About</a>
+        <a href="#" class="nav">Archive</a>
       </div>
     </nav>
     <!-- ===================== /NAVBAR ===================== -->
@@ -137,52 +97,36 @@
         </p>
 
         <!-- Artikelkort-rutnät -->
-        <div class="grid w-full grid-cols-1 gap-6 sm:grid-cols-2">
+        <div class="card-grid">
           <!-- Artikelkort 1 -->
-          <div
-            class="group border-brand-beige hover:border-brand-yellow/50 relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl"
-          >
+          <article class="group card-article-styling">
             <!-- Kortets bild och kategori-badge -->
             <div class="h-56 overflow-hidden">
               <img
                 src="src/bild.exempel.jpg"
                 alt="Article image"
-                class="h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                class="card-img"
               />
 
-              <span
-                class="bg-brand-yellow text-brand-dark absolute top-3 left-3 rounded px-2 py-1 text-[10px] font-black tracking-widest uppercase shadow-sm"
-              >
-                AI Breakthrough
-              </span>
+              <span class="card-badge"> AI Breakthrough </span>
             </div>
 
             <!-- Kortets textinnehåll -->
             <div class="flex flex-col gap-3 p-6">
-              <p
-                class="text-brand-dark/40 text-xs font-bold tracking-tighter uppercase"
-              >
-                Publicerad 2026-03-25
-              </p>
+              <p class="card-published">Publicerad 2026-03-25</p>
 
-              <h3
-                class="font-display text-brand-dark text-2xl leading-tight font-bold"
-              >
+              <h3 class="card-header">
                 <span class="link-underline">lorem ipsum dolor sit amet</span>
               </h3>
 
-              <p
-                class="text-brand-dark/70 line-clamp-2 text-sm leading-relaxed"
-              >
+              <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 efficitur, nisl nec bibendum commodo, nisl nunc consectetur
                 nisi, euismod aliquam nisl nunc euismod nisi.
               </p>
 
               <!-- Läs mer-länk med pil-ikon -->
-              <div
-                class="text-brand-dark group-hover:text-brand-accent mt-2 flex items-center gap-2 text-sm font-bold transition-colors"
-              >
+              <div class="card-read-more">
                 Läs hela artikeln
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +134,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="2.5"
                   stroke="currentColor"
-                  class="size-4 transition-transform group-hover:translate-x-1"
+                  class="card-svg"
                 >
                   <path
                     stroke-linecap="round"
@@ -200,365 +144,126 @@
                 </svg>
               </div>
             </div>
-          </div>
+          </article>
           <!-- /Artikelkort 1 -->
-
-          <!-- Artikelkort 2 -->
-          <div
-            class="group border-brand-beige hover:border-brand-yellow/50 relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl"
-          >
-            <!-- Kortets bild och kategori-badge -->
-            <div class="h-56 overflow-hidden">
-              <img
-                src="src/bild.exempel.jpg"
-                alt="Article image"
-                class="h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-              />
-
-              <span
-                class="bg-brand-yellow text-brand-dark absolute top-3 left-3 rounded px-2 py-1 text-[10px] font-black tracking-widest uppercase shadow-sm"
-              >
-                AI Breakthrough
-              </span>
-            </div>
-
-            <!-- Kortets textinnehåll -->
-            <div class="flex flex-col gap-3 p-6">
-              <p
-                class="text-brand-dark/40 text-xs font-bold tracking-tighter uppercase"
-              >
-                Publicerad 2026-03-25
-              </p>
-
-              <h3
-                class="font-display text-brand-dark text-2xl leading-tight font-bold"
-              >
-                <span class="link-underline">lorem ipsum dolor sit amet</span>
-              </h3>
-
-              <p
-                class="text-brand-dark/70 line-clamp-2 text-sm leading-relaxed"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                efficitur, nisl nec bibendum commodo, nisl nunc consectetur
-                nisi, euismod aliquam nisl nunc euismod nisi.
-              </p>
-
-              <!-- Läs mer-länk med pil-ikon -->
-              <div
-                class="text-brand-dark group-hover:text-brand-accent mt-2 flex items-center gap-2 text-sm font-bold transition-colors"
-              >
-                Läs hela artikeln
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2.5"
-                  stroke="currentColor"
-                  class="size-4 transition-transform group-hover:translate-x-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <!-- /Artikelkort 2 -->
         </div>
         <!-- /Artikelkort-rutnät -->
       </section>
       <!-- ---- /ARTIKELSEKTION ---- -->
 
       <!-- ---- SIDEBAR ---- -->
-      <!-- Kategoripanel med kompakta artikellänkar, sticky vid scrollning -->
-      <aside class="flex flex-col lg:col-span-4">
-        <div class="sticky top-24">
-          <h2 class="text-brand-dark font-display mb-2 text-2xl font-bold">
-            Categories
-          </h2>
-          <p class="text-brand-dark/70 mb-6">Browse news by category.</p>
+      <!-- Kategoripanel med kompakta artikellänkar -->
+      <aside class="flex flex-col gap-8 lg:col-span-4">
+        <h2 class="text-brand-dark font-display mb-2 text-2xl font-bold">
+          Categories
+        </h2>
+        <p class="text-brand-dark/70 -mt-8">Browse news by category.</p>
+
+        <!-- AI Highlights -->
+        <div>
           <div
             class="bg-brand-yellow rounded-lg p-1 text-center text-sm font-bold tracking-widest uppercase"
           >
             AI Highlights
           </div>
           <div
-            class="mt-2 flex gap-4 snap-x overflow-x-auto pb-4 lg:flex-col lg:overflow-visible lg:pb-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden""
+            class="mt-2 flex snap-x gap-4 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] lg:flex-col lg:overflow-visible lg:pb-0 [&::-webkit-scrollbar]:hidden"
           >
-            <!-- Kategori-rubrik: AI Highlights -->
-
             <!-- Sidebarkort 1 -->
             <a href="#" class="group w-64 shrink-0 lg:w-full">
-              <div
-                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
-              >
+              <article class="sidebar-card">
                 <img
                   src="src/bild.exempel.jpg"
                   alt="example image"
-                  class="h-20 w-20 rounded-lg object-cover"
+                  class="sidebar-img"
                 />
                 <div class="flex flex-col justify-center">
-                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
-                    March 18
-                  </p>
-                  <h4
-                    class="group-hover:text-brand-accent font-display line-clamp-2 text-sm font-bold transition-colors"
-                  >
+                  <p class="sidebar-published">March 18</p>
+                  <h4 class="group-hover:text-brand-accent sidebar-header">
                     <span class="link-underline">
                       New breakthrough in green energy tech
                     </span>
                   </h4>
                 </div>
-              </div>
+              </article>
             </a>
             <!-- /Sidebarkort 1 -->
-
-            <a href="#" class="group w-64 shrink-0 lg:w-full">
-              <div
-                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
-              >
-                <img
-                  src="src/bild.exempel.jpg"
-                  alt="example image"
-                  class="h-20 w-20 rounded-lg object-cover"
-                />
-                <div class="flex flex-col justify-center">
-                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
-                    March 18
-                  </p>
-                  <h4
-                    class="group-hover:text-brand-accent font-display line-clamp-2 text-sm font-bold transition-colors"
-                  >
-                    <span class="link-underline">
-                      New breakthrough in green energy tech
-                    </span>
-                  </h4>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" class="group w-64 shrink-0 lg:w-full">
-              <div
-                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
-              >
-                <img
-                  src="src/bild.exempel.jpg"
-                  alt="example image"
-                  class="h-20 w-20 rounded-lg object-cover"
-                />
-                <div class="flex flex-col justify-center">
-                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
-                    March 18
-                  </p>
-                  <h4
-                    class="group-hover:text-brand-accent font-display line-clamp-2 text-sm font-bold transition-colors"
-                  >
-                    <span class="link-underline">
-                      New breakthrough in green energy tech
-                    </span>
-                  </h4>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" class="group w-64 shrink-0 lg:w-full">
-              <div
-                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
-              >
-                <img
-                  src="src/bild.exempel.jpg"
-                  alt="example image"
-                  class="h-20 w-20 rounded-lg object-cover"
-                />
-                <div class="flex flex-col justify-center">
-                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
-                    March 18
-                  </p>
-                  <h4
-                    class="group-hover:text-brand-accent font-display line-clamp-2 text-sm font-bold transition-colors"
-                  >
-                    <span class="link-underline">
-                      New breakthrough in green energy tech
-                    </span>
-                  </h4>
-                </div>
-              </div>
-            </a>
-
-            
           </div>
-          <div class="inline-flex items-center rounded-lg px-7 text-sm font-bold transition-colors hover:bg-white/30 bg-brand-yellow py-2">
-          <a href="#" class="group flex items-center gap-2">
-              <div
-                class="text-brand-dark group-hover:text-brand-accent flex items-center text-sm font-bold transition-colors"
-              >
-              </div>
-                View all AI Highlights
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2.5"
-                  stroke="currentColor"
-                  class="size-4 transition-transform group-hover:translate-x-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-            </a>
-            </div>
+          <a
+            href="#"
+            class="group bg-brand-yellow my-2 inline-flex items-center gap-2 rounded-lg px-7 py-2 text-sm font-bold transition-colors hover:bg-white/30"
+          >
+            View all AI Highlights
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="size-4 transition-transform group-hover:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
         </div>
 
+        <!-- Crypto Highlights -->
         <div class="sticky top-24">
-          <h2 class="text-brand-dark font-display mb-2 text-2xl font-bold">
-            Categories
-          </h2>
-          <p class="text-brand-dark/70 mb-6">Browse news by category.</p>
           <div
             class="bg-brand-yellow rounded-lg p-1 text-center text-sm font-bold tracking-widest uppercase"
           >
             Crypto Highlights
           </div>
           <div
-            class="mt-2 flex gap-4 snap-x overflow-x-auto pb-4 lg:flex-col lg:overflow-visible lg:pb-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden""
+            class="mt-2 flex snap-x gap-4 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] lg:flex-col lg:overflow-visible lg:pb-0 [&::-webkit-scrollbar]:hidden"
           >
-            <!-- Kategori-rubrik: Crypto Highlights -->
-
             <!-- Sidebarkort 1 -->
             <a href="#" class="group w-64 shrink-0 lg:w-full">
-              <div
-                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
-              >
+              <article class="sidebar-card">
                 <img
                   src="src/bild.exempel.jpg"
                   alt="example image"
-                  class="h-20 w-20 rounded-lg object-cover"
+                  class="sidebar-img"
                 />
                 <div class="flex flex-col justify-center">
-                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
-                    March 18
-                  </p>
-                  <h4
-                    class="group-hover:text-brand-accent font-display line-clamp-2 text-sm font-bold transition-colors"
-                  >
+                  <p class="sidebar-published">March 18</p>
+                  <h4 class="group-hover:text-brand-accent sidebar-header">
                     <span class="link-underline">
                       New breakthrough in DogeCoin adoption
                     </span>
                   </h4>
                 </div>
-              </div>
+              </article>
             </a>
             <!-- /Sidebarkort 1 -->
-
-            <a href="#" class="group w-64 shrink-0 lg:w-full">
-              <div
-                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
-              >
-                <img
-                  src="src/bild.exempel.jpg"
-                  alt="example image"
-                  class="h-20 w-20 rounded-lg object-cover"
-                />
-                <div class="flex flex-col justify-center">
-                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
-                    March 18
-                  </p>
-                  <h4
-                    class="group-hover:text-brand-accent font-display line-clamp-2 text-sm font-bold transition-colors"
-                  >
-                    <span class="link-underline">
-                      new breakthrough in DogeCoin adoption
-                    </span>
-                  </h4>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" class="group w-64 shrink-0 lg:w-full">
-              <div
-                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
-              >
-                <img
-                  src="src/bild.exempel.jpg"
-                  alt="example image"
-                  class="h-20 w-20 rounded-lg object-cover"
-                />
-                <div class="flex flex-col justify-center">
-                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
-                    March 18
-                  </p>
-                  <h4
-                    class="group-hover:text-brand-accent font-display line-clamp-2 text-sm font-bold transition-colors"
-                  >
-                    <span class="link-underline">
-                      New breakthrough in DogeCoin adoption
-                    </span>
-                  </h4>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" class="group w-64 shrink-0 lg:w-full">
-              <div
-                class="border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors"
-              >
-                <img
-                  src="src/bild.exempel.jpg"
-                  alt="example image"
-                  class="h-20 w-20 rounded-lg object-cover"
-                />
-                <div class="flex flex-col justify-center">
-                  <p class="text-brand-dark/40 text-[10px] font-bold uppercase">
-                    March 18
-                  </p>
-                  <h4
-                    class="group-hover:text-brand-accent font-display line-clamp-2 text-sm font-bold transition-colors"
-                  >
-                    <span class="link-underline">
-                      New breakthrough in DogeCoin adoption
-                    </span>
-                  </h4>
-                </div>
-              </div>
-            </a>
-
-            
           </div>
-          <div class="inline-flex items-center rounded-lg px-7 text-sm font-bold transition-colors hover:bg-white/30 bg-pink-950 py-2">
-          <a href="#" class="group flex items-center gap-2">
-              <div
-                class="text-brand-dark group-hover:text-brand-accent flex items-center text-sm font-bold transition-colors"
-              >
-              </div>
-                View all Crypto Highlights
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2.5"
-                  stroke="currentColor"
-                  class="size-4 transition-transform group-hover:translate-x-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-            </a>
-            </div>
+          <a
+            href="#"
+            class="group bg-brand-yellow my-2 inline-flex items-center gap-2 rounded-lg px-7 py-2 text-sm font-bold transition-colors hover:bg-white/30"
+          >
+            View all Crypto Highlights
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="size-4 transition-transform group-hover:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
         </div>
       </aside>
       <!-- ---- /SIDEBAR ---- -->
-
-
-
     </main>
     <!-- ===================== /MAIN CONTENT ===================== -->
   </body>
