@@ -14,6 +14,7 @@
 }
 
 @layer utilities {
+  /* _____ Highlight effect _____ */
   .link-underline {
     background-image: linear-gradient(
       var(--color-brand-yellow),
@@ -32,6 +33,7 @@
 }
 
 @layer components {
+  /* _____ Button & Nav Link Styles _____ */
   .btn {
     @apply bg-brand-dark rounded-3xl px-4 py-2 text-sm font-medium text-white transition-all hover:opacity-90;
   }
@@ -40,6 +42,59 @@
     @apply snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30;
   }
 
+  /* _____ Header Styles _____ */
+  .site-header {
+    @apply bg-brand-yellow border-brand-dark/10 flex items-center justify-between border-b px-4 py-2 md:grid md:grid-cols-3;
+  }
+
+  .header-logo {
+    @apply flex md:justify-center;
+  }
+
+  .header-actions {
+    @apply flex items-center justify-end gap-4;
+  }
+
+  /* _____ Navbar Styles _____ */
+  .site-nav {
+    @apply bg-brand-yellow/90 border-brand-dark/5 sticky top-0 z-10 flex items-center justify-center gap-4 border-b px-4 py-2 backdrop-blur-md;
+  }
+
+  .nav-search {
+    @apply relative flex items-center;
+  }
+
+  .nav-search-icon {
+    @apply text-brand-dark/50 pointer-events-none absolute left-3 flex items-center;
+  }
+
+  .nav-search-input {
+    @apply focus:border-brand-dark/10 placeholder:text-brand-dark/40 h-10 w-10 cursor-pointer rounded-full border border-transparent bg-white/50 pr-4 pl-10 transition-all duration-500 ease-in-out outline-none placeholder:opacity-0 focus:w-64 focus:cursor-text focus:bg-white focus:shadow-md focus:placeholder:opacity-100;
+  }
+
+  .nav-links {
+    @apply flex snap-x flex-nowrap gap-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+  }
+
+  /* _____ Layout Styles _____ */
+  .main-layout {
+    @apply mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-8 md:grid-cols-12;
+  }
+
+  /* _____ Articles Section Styles _____ */
+  .articles-section {
+    @apply flex flex-col items-center lg:col-span-8;
+  }
+
+  .section-title {
+    @apply font-display text-brand-dark mb-2 text-3xl font-bold lg:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply text-brand-dark/70 mb-8 text-center text-lg;
+  }
+
+  /* _____ Main Card Styles _____ */
   .card-grid {
     @apply grid w-full grid-cols-1 gap-6 sm:grid-cols-2;
   }
@@ -48,8 +103,8 @@
     @apply border-brand-beige hover:border-brand-yellow/50 relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl;
   }
 
-  .card-published {
-    @apply text-brand-dark/40 text-xs font-bold tracking-tighter uppercase;
+  .card-img-wrapper {
+    @apply h-56 overflow-hidden;
   }
 
   .card-img {
@@ -58,6 +113,14 @@
 
   .card-badge {
     @apply bg-brand-yellow text-brand-dark absolute top-3 left-3 rounded px-2 py-1 text-[10px] font-black tracking-widest uppercase shadow-sm;
+  }
+
+  .card-body {
+    @apply flex flex-col gap-3 p-6;
+  }
+
+  .card-published {
+    @apply text-brand-dark/40 text-xs font-bold tracking-tighter uppercase;
   }
 
   .card-header {
@@ -76,8 +139,38 @@
     @apply size-4 transition-transform group-hover:translate-x-1;
   }
 
+  /* _____ Sidebar Layout Styles _____ */
+  .sidebar-layout {
+    @apply flex flex-col gap-8 lg:col-span-4;
+  }
+
+  .sidebar-title {
+    @apply font-display text-brand-dark mb-2 text-2xl font-bold;
+  }
+
+  .sidebar-subtitle {
+    @apply text-brand-dark/70 -mt-8;
+  }
+
+  .sidebar-category-label {
+    @apply bg-brand-yellow rounded-lg p-1 text-center text-sm font-bold tracking-widest uppercase;
+  }
+
+  .sidebar-cards {
+    @apply mt-2 flex snap-x gap-4 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] lg:flex-col lg:overflow-visible lg:pb-0 [&::-webkit-scrollbar]:hidden;
+  }
+
+  .sidebar-card-link {
+    @apply w-64 shrink-0 lg:w-full;
+  }
+
+  .sidebar-view-all {
+    @apply bg-brand-cream hover:bg-brand-yellow my-2 inline-flex items-center gap-2 rounded-lg px-7 py-2 text-sm font-bold transition-colors;
+  }
+
+  /* _____ Sidebar Card Styles _____ */
   .sidebar-card {
-    @apply border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors;
+    @apply border-brand-beige group-hover:border-brand-yellow flex gap-3 rounded-xl border bg-white p-3 shadow-sm transition-colors hover:-translate-y-0.5 hover:shadow-xl;
   }
 
   .sidebar-img {
