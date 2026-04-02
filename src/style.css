@@ -81,7 +81,7 @@
     @apply mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-8 md:grid-cols-12;
   }
 
-  /* _____ Articles Section Styles _____ */
+  /* _____ Card Section Styles _____ */
   .articles-section {
     @apply flex flex-col items-center lg:col-span-8;
   }
@@ -166,6 +166,10 @@
 
   .sidebar-view-all {
     @apply bg-brand-cream hover:bg-brand-yellow my-2 inline-flex items-center gap-2 rounded-lg px-7 py-2 text-sm font-bold transition-colors;
+  }
+
+  .sidebar-card-content {
+    @apply flex flex-col justify-center;
   }
 
   /* _____ Sidebar Card Styles _____ */
