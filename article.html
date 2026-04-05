@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Good Tech | Positive Tech News</title>
     <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/article.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -80,26 +81,34 @@
     </nav>
 
     <main class="main-layout">
-      <div id="article-categories" class="mb-4 flex gap-2"></div>
-      <h1
-        id="article-title"
-        class="font-display mb-4 text-4xl font-bold md:text-6xl"
-      ></h1>
-      <p id="article-date" class="card-published mb-8"></p>
+      <div id="article-categories" class="articles-section">
+        <a
+          href="index.html"
+          class="btn bg-brand-dark/60 backdrop-blur-sm fixed bottom-6 left-1/2 -translate-x-1/2"
+"
+        >
+          ← Tillbaka till start
+        </a>
+        <h1 id="article-title" ...></h1>
+        <h1
+          id="article-title"
+          class="font-display mb-4 text-2xl font-bold md:text-6xl"
+        ></h1>
+        <p id="article-date" class="card-published mb-2"></p>
+        <div id="article-badges" class="mb-8 flex flex-wrap gap-2"></div>
 
-      <img
-        id="article-image"
-        src=""
-        alt=""
-        class="mb-8 w-full rounded-3xl object-cover shadow-lg"
-      />
+        <img
+          id="article-image"
+          src=""
+          alt=""
+          class="mb-8 w-full rounded-3xl object-cover shadow-lg"
+        />
 
-      <div
-        id="article-content"
-        class="text-brand-dark/80 space-y-6 text-lg leading-relaxed"
-      ></div>
-
-      <a href="index.html" class="">← Tillbaka till start</a>
+        <div
+          id="article-content"
+          class="prose lg:prose-xl prose-brand-dark prose-headings:font-display prose-a:text-brand-accent prose-a:underline prose-a:decoration-brand-accent prose-a:decoration-2 prose-a:underline-offset-4 max-w-none"
+        ></div>
+      </div>
       <!-- ---- SIDEBAR ---- -->
       <!-- Category panel with compact article links, grouped by topic -->
       <aside class="sidebar-layout">

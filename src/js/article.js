@@ -6,7 +6,7 @@ function initArticlePage() {
 
   const article = articles.find((a) => a.id === id);
 
-  if (article) {
+  if (!article) {
     window.location.href = "index.html";
     return;
   }
@@ -15,14 +15,11 @@ function initArticlePage() {
   document.querySelector("#article-date").innerText =
     `Published: ${article.date}`;
   document.querySelector("#article-image").src = article.image;
-  document.querySelector("#article-content").innerText = article.summary;
+  const contentElement = document.querySelector("#article-content");
+  contentElement.innerHTML = article.body;
 
-  const catContainer = document.querySelector("#article-categories");
-  catContainer.innerHTML = article.categories
-    .map(
-      (cat) => `
-        <span class="card-badge">${cat}</span>)`,
-    )
+  document.querySelector("#article-badges").innerHTML = article.categories
+    .map((cat) => `<span class="card-badge">${cat}</span>`)
     .join("");
 }
 
