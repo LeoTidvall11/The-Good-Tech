@@ -1,13 +1,13 @@
 @layer components {
   .site-footer {
-    @apply bg-brand-dark text-brand-cream flex items-center justify-between px-24 py-6;
+    @apply bg-brand-dark text-brand-cream flex items-center justify-between px-4 py-6 lg:px-24;
   }
   .footer-links {
-    @apply mt-4 space-x-8;
+    @apply mt-4 space-x-2 lg:space-x-8;
   }
 
   .footer-social {
-    @apply mt-4 flex space-x-8;
+    @apply mt-4 flex space-x-2 lg:space-x-8;
   }
 
   .footer-link {

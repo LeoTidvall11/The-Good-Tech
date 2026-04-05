@@ -13,7 +13,7 @@
   }
 
   .nav-search-input {
-    @apply focus:border-brand-dark/10 placeholder:text-brand-dark/40 h-10 w-10 cursor-pointer rounded-full border border-transparent bg-white/50 pr-4 pl-10 transition-all duration-500 ease-in-out outline-none placeholder:opacity-0 focus:w-64 focus:cursor-text focus:bg-white focus:shadow-md focus:placeholder:opacity-100;
+    @apply focus:border-brand-dark/10 placeholder:text-brand-dark/40 bg-brand-cream/50 h-10 w-10 cursor-pointer rounded-full border border-transparent pr-4 pl-10 transition-all duration-500 ease-in-out outline-none placeholder:opacity-0 focus:w-64 focus:cursor-text focus:bg-white focus:shadow-md focus:placeholder:opacity-100;
   }
 
   .nav-links {

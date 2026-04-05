@@ -78,24 +78,28 @@
         <a href="#" class="nav">About</a>
       </div>
     </nav>
-    <!-- ===================== /NAVBAR ===================== -->
 
-    <!-- ===================== MAIN CONTENT ===================== -->
-    <!-- Two-column layout: article feed on the left, sidebar on the right -->
     <main class="main-layout">
-      <!-- ---- ARTICLE SECTION ---- -->
-      <!-- Latest news displayed as cards in a responsive grid -->
-      <section class="articles-section">
-        <h2 class="section-title">Latest News</h2>
-        <p class="section-subtitle">
-          Stay updated with the latest positive tech news and breakthroughs.
-        </p>
+      <div id="article-categories" class="mb-4 flex gap-2"></div>
+      <h1
+        id="article-title"
+        class="font-display mb-4 text-4xl font-bold md:text-6xl"
+      ></h1>
+      <p id="article-date" class="card-published mb-8"></p>
 
-        <!-- Article card grid -->
-        <div id="main-articles" class="card-grid"></div>
-      </section>
-      <!-- ---- /ARTICLE SECTION ---- -->
+      <img
+        id="article-image"
+        src=""
+        alt=""
+        class="mb-8 w-full rounded-3xl object-cover shadow-lg"
+      />
 
+      <div
+        id="article-content"
+        class="text-brand-dark/80 space-y-6 text-lg leading-relaxed"
+      ></div>
+
+      <a href="index.html" class="">← Tillbaka till start</a>
       <!-- ---- SIDEBAR ---- -->
       <!-- Category panel with compact article links, grouped by topic -->
       <aside class="sidebar-layout">

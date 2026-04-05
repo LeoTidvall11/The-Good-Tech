@@ -5,17 +5,27 @@ function renderArticles() {
   const mainContainer = document.querySelector("#main-articles");
 
   if (mainContainer) {
-    const mainArticles = articles.filter((article) => article.type === "main");
+    const mainArticles = articles.filter((article) =>
+      article.types.includes("main"),
+    );
 
     mainContainer.innerHTML = mainArticles
       .map(
         (article) => `
-            <a href="#">
+            <a href="article.html?id=${article.id}">
             <article class="group card-article-styling">
             <div class="card-img-wrapper">
                 <img src="${article.image}" alt="${article.title}" class="card-img">
-                <span class="card-badge">${article.category}</span>
-            </div>
+                <div class="card-badge-container">
+        ${article.categories
+          .map(
+            (cat) => `
+            <span class="card-badge">${cat}</span>
+        `,
+          )
+          .join("")}
+          </div>
+        </div>
             <div class="card-body">
             <p class="card-published"> Published: ${article.date}</p>
                 <h3 class="card-header">
@@ -36,7 +46,6 @@ function renderArticles() {
       .join("");
   }
 }
-renderArticles();
 
 function renderSidebar() {
   const aiContainer = document.querySelector("#ai-sidebar-cards");
@@ -45,13 +54,13 @@ function renderSidebar() {
   if (!aiContainer || !cryptoContainer) return;
 
   const aiArticles = articles.filter(
-    (a) => a.type === "sidebar" && a.category === "AI",
+    (a) => a.types.includes("sidebar") && a.categories.includes("AI"),
   );
 
   aiContainer.innerHTML = aiArticles
     .map(
       (article) => `
-    <a href="#" class="group sidebar-card-link">
+    <a href="article.html?id=${article.id}" class="group sidebar-card-link">
     <article class="sidebar-card">
     <img src="${article.image}" alt="${article.title}" class="sidebar-img"/>
     <div class="sidebar-card-content">
@@ -67,12 +76,12 @@ function renderSidebar() {
     .join("");
 
   const cryptoArticles = articles.filter(
-    (a) => a.type === "sidebar" && a.category === "Crypto",
+    (a) => a.types.includes("sidebar") && a.categories.includes("Crypto"),
   );
   cryptoContainer.innerHTML = cryptoArticles
     .map(
       (article) => `
-    <a href="#" class="group sidebar-card-link">
+    <a href="article.html?id=${article.id}" class="group sidebar-card-link">
     <article class="sidebar-card">
     <img src="${article.image}" alt="${article.title}" class="sidebar-img"/>
     <div class="sidebar-card-content">
@@ -89,3 +98,4 @@ function renderSidebar() {
 }
 
 renderSidebar();
+renderArticles();
