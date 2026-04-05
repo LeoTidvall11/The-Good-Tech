@@ -1,4 +1,4 @@
-import "./style.css";
+import "../css/styles.css";
 import { articles } from "./data.js";
 
 function renderArticles() {

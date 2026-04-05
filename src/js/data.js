@@ -4,7 +4,7 @@ export const articles = [
     title: "lorem ipsum dolor sit amet",
     category: "lorem ipsum",
     date: "2026-04-02",
-    image: "src/bild.exempel.jpg",
+    image: "src/images/bild.exempel.jpg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     type: "main",
@@ -14,7 +14,7 @@ export const articles = [
     title: "lorem ipsum dolor sit amet",
     category: "AI",
     date: "2026-04-02",
-    image: "src/bild.exempel.jpg",
+    image: "src/images/bild.exempel.jpg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     type: "sidebar",
@@ -24,7 +24,7 @@ export const articles = [
     title: "lorem ipsum dolor sit amet",
     category: "Crypto",
     date: "2026-04-02",
-    image: "src/bild.exempel.jpg",
+    image: "src/images/bild.exempel.jpg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     type: "sidebar",

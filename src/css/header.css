@@ -1,0 +1,23 @@
+@layer components {
+  /* _____ Button & Nav Link Styles _____ */
+  .btn {
+    @apply bg-brand-dark rounded-3xl px-4 py-2 text-sm font-medium text-white transition-all hover:opacity-90;
+  }
+
+  .nav {
+    @apply snap-center rounded-lg px-4 py-2 transition-colors hover:bg-white/30;
+  }
+
+  /* _____ Header Styles _____ */
+  .site-header {
+    @apply bg-brand-yellow border-brand-dark/10 flex items-center justify-between border-b px-4 py-2 md:grid md:grid-cols-3;
+  }
+
+  .header-logo {
+    @apply flex md:justify-center;
+  }
+
+  .header-actions {
+    @apply flex items-center justify-end gap-4;
+  }
+}

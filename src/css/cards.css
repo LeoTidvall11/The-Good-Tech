@@ -1,0 +1,64 @@
+@layer components {
+  /* _____ Layout Styles _____ */
+  .main-layout {
+    @apply mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-8 md:grid-cols-12;
+  }
+
+  /* _____ Card Section Styles _____ */
+  .articles-section {
+    @apply flex flex-col items-center lg:col-span-8;
+  }
+
+  .section-title {
+    @apply font-display text-brand-dark mb-2 text-3xl font-bold lg:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply text-brand-dark/70 mb-8 text-center text-lg;
+  }
+
+  /* _____ Main Card Styles _____ */
+  .card-grid {
+    @apply grid w-full grid-cols-1 gap-6 sm:grid-cols-2;
+  }
+
+  .card-article-styling {
+    @apply border-brand-beige hover:border-brand-yellow/50 relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  .card-img-wrapper {
+    @apply h-56 overflow-hidden;
+  }
+
+  .card-img {
+    @apply h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105;
+  }
+
+  .card-badge {
+    @apply bg-brand-yellow text-brand-dark absolute top-3 left-3 rounded px-2 py-1 text-[10px] font-black tracking-widest uppercase shadow-sm;
+  }
+
+  .card-body {
+    @apply flex flex-col gap-3 p-6;
+  }
+
+  .card-published {
+    @apply text-brand-dark/40 text-xs font-bold tracking-tighter uppercase;
+  }
+
+  .card-header {
+    @apply font-display text-brand-dark text-2xl leading-tight font-bold;
+  }
+
+  .card-text {
+    @apply text-brand-dark/70 line-clamp-2 text-sm leading-relaxed;
+  }
+
+  .card-read-more {
+    @apply text-brand-dark group-hover:text-brand-accent mt-2 flex items-center gap-2 text-sm font-bold transition-colors;
+  }
+
+  .card-svg {
+    @apply size-4 transition-transform group-hover:translate-x-1;
+  }
+}
