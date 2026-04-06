@@ -19,7 +19,7 @@ function initArticlePage() {
   contentElement.innerHTML = article.body;
 
   document.querySelector("#article-badges").innerHTML = article.categories
-    .map((cat) => `<span class="card-badge">${cat}</span>`)
+    .map((cat) => `<span class="card-badge" data-category="${cat}">${cat}</span>`)
     .join("");
 }
 

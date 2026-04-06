@@ -18,4 +18,14 @@
   --color-brand-dark: #1f2937;
   --color-brand-text-muted: #4b5563;
   --color-brand-accent: #d97706;
+
+  --color-cat-ai: var(--color-brand-yellow);
+  --color-cat-crypto: #fb7185;
+  --color-cat-space: #818cf8;
+  --color-cat-health: #34d399;
+  --color-cat-ocean: #38bdf8;
+  --color-cat-sustainability: #2dd4bf;
+  --color-cat-energy: #fb923c;
+  --color-cat-odd: #c084fc;
+  --color-cat-breakthroughs: #22d3ee;
 }

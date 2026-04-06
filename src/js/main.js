@@ -20,7 +20,7 @@ function renderArticles() {
         ${article.categories
           .map(
             (cat) => `
-            <span class="card-badge">${cat}</span>
+            <span class="card-badge" data-category="${cat}">${cat}</span>
         `,
           )
           .join("")}

@@ -1,7 +1,7 @@
 @layer components {
   /* _____ Layout Styles _____ */
   .main-layout {
-    @apply mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-8 md:grid-cols-12;
+    @apply isolate mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-8 md:grid-cols-12;
   }
 
   /* _____ Card Section Styles _____ */
@@ -35,11 +35,47 @@
   }
 
   .card-badge-container {
-    @apply absolute top-3 left-3 z-10 flex flex-wrap gap-1;
+    @apply absolute top-3 left-3 flex flex-wrap gap-1;
   }
 
   .card-badge {
-    @apply bg-brand-yellow text-brand-dark rounded px-2 py-1 text-[10px] font-black tracking-widest whitespace-nowrap uppercase shadow-sm;
+    @apply bg-brand-yellow text-brand-dark border-brand-cream rounded-full border-2 px-2 py-1 text-[10px] font-black tracking-widest whitespace-nowrap uppercase shadow-lg backdrop-blur-sm;
+  }
+
+  .card-badge[data-category="AI"] {
+    @apply bg-brand-yellow text-brand-dark;
+  }
+
+  .card-badge[data-category="Crypto"] {
+    @apply bg-cat-crypto text-white;
+  }
+
+  .card-badge[data-category="Space"] {
+    @apply bg-cat-space text-white;
+  }
+
+  .card-badge[data-category="Health"] {
+    @apply bg-cat-health text-white;
+  }
+
+  .card-badge[data-category="Ocean"] {
+    @apply bg-cat-ocean text-white;
+  }
+
+  .card-badge[data-category="Sustainability"] {
+    @apply bg-cat-sustainability text-white;
+  }
+
+  .card-badge[data-category="Energy"] {
+    @apply bg-cat-energy text-white;
+  }
+
+  .card-badge[data-category="Odd"] {
+    @apply bg-cat-odd text-white;
+  }
+
+  .card-badge[data-category="Breakthroughs"] {
+    @apply bg-cat-breakthroughs text-brand-dark;
   }
 
   .card-body {

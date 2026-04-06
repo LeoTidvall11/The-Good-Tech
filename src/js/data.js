@@ -362,7 +362,7 @@ export const articles = [
       "El Salvador Reports $2 Billion Profit from Its Bitcoin Treasury Strategy",
     categories: ["Crypto"],
     date: "2026-04-05",
-    image: "src/images/el-salvador-bitcoin-profit.jpg",
+    image: "src/images/bild.exempel.jpg",
     summary:
       "Five years after making Bitcoin legal tender, El Salvador has announced a $2 billion unrealized profit on its national BTC holdings, vindicating President Bukele's controversial bet on digital assets.",
     types: ["main"],
