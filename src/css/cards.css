@@ -6,7 +6,7 @@
 
   /* _____ Card Section Styles _____ */
   .articles-section {
-    @apply flex flex-col items-center lg:col-span-8;
+    @apply flex flex-col items-center md:col-span-12 lg:col-span-8;
   }
 
   .section-title {
@@ -23,7 +23,7 @@
   }
 
   .card-article-styling {
-    @apply border-brand-beige hover:border-brand-yellow/50 relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl;
+    @apply border-brand-beige hover:border-brand-yellow/50 relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl;
   }
 
   .card-img-wrapper {
@@ -79,7 +79,7 @@
   }
 
   .card-body {
-    @apply flex flex-col gap-3 p-6;
+    @apply flex flex-1 flex-col gap-3 p-6;
   }
 
   .card-published {

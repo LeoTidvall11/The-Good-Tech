@@ -1,5 +1,4 @@
 @layer utilities {
-  /* _____ Highlight effect _____ */
   .link-underline {
     background-image: linear-gradient(
       var(--color-brand-yellow),

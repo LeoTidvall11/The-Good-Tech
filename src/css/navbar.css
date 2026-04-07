@@ -1,5 +1,4 @@
 @layer components {
-  /* _____ Navbar Styles _____ */
   .site-nav {
     @apply bg-brand-yellow/90 border-brand-dark/5 sticky top-0 z-50 flex items-center justify-center gap-4 border-b px-4 py-2 backdrop-blur-md;
   }
@@ -17,6 +16,6 @@
   }
 
   .nav-links {
-    @apply flex snap-x flex-nowrap gap-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+    @apply flex snap-x flex-nowrap gap-1 overflow-x-auto overflow-y-hidden [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
   }
 }

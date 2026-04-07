@@ -4,7 +4,7 @@ export const articles = [
     title: "OpenAI Unveils GPT-5: The Most Capable AI Model Ever Built",
     categories: ["AI"],
     date: "2026-04-05",
-    image: "src/images/gpt5-launch.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "OpenAI has officially released GPT-5, boasting unprecedented reasoning abilities and multimodal capabilities that outperform every existing benchmark by a wide margin.",
     types: ["main", "sidebar"],
@@ -30,7 +30,7 @@ export const articles = [
     title: "EU's New AI Regulation Takes Effect, Reshaping the Tech Landscape",
     categories: ["AI"],
     date: "2026-04-04",
-    image: "src/images/eu-ai-regulation.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "The European Union's landmark AI Act has entered full enforcement, forcing major tech companies to audit high-risk systems and publish transparency reports.",
     types: ["main", "sidebar"],
@@ -55,10 +55,10 @@ export const articles = [
       "Bitcoin Surges Past $150,000 as Institutional Demand Hits Record Highs",
     categories: ["Crypto"],
     date: "2026-04-05",
-    image: "src/images/bitcoin-surge.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "Bitcoin has broken through the $150,000 barrier for the first time, driven by a wave of institutional investment and growing adoption among sovereign wealth funds.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>Bitcoin shattered the $150,000 price barrier on Sunday, reaching a new all-time high of $152,340 during early Asian trading hours before settling around $149,800 by mid-afternoon UTC. The milestone caps a remarkable six-month rally that has seen the world's largest cryptocurrency more than double in value, fueled by an unprecedented surge of institutional and sovereign capital entering the market.</p>
  
 <h2>Institutions Lead the Charge</h2>
@@ -78,7 +78,7 @@ export const articles = [
     title: "Ethereum's Next Upgrade Promises 10x Faster Transactions",
     categories: ["Crypto"],
     date: "2026-04-03",
-    image: "src/images/ethereum-upgrade.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "The Ethereum Foundation has announced its most ambitious protocol upgrade yet, targeting a tenfold improvement in transaction throughput while significantly reducing gas fees.",
     types: ["main", "sidebar"],
@@ -101,10 +101,10 @@ export const articles = [
     title: "NASA's Artemis IV Crew Successfully Lands on the Lunar South Pole",
     categories: ["Space"],
     date: "2026-04-02",
-    image: "src/images/artemis-iv-moon.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "Four astronauts have touched down near the lunar south pole in humanity's most ambitious Moon mission to date, marking the beginning of a permanent crewed presence on the Moon.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>NASA's Artemis IV mission achieved a historic milestone on Wednesday when its crew of four astronauts successfully landed near the lunar south pole at a site designated Shackleton Rim Alpha, less than two kilometers from the entrance to a permanently shadowed crater believed to contain significant water ice deposits. The landing marks the first time humans have set foot on the Moon since Apollo 17 in 1972 — and the first time any crew has visited the lunar south pole.</p>
  
 <h2>A Mission Built on Years of Preparation</h2>
@@ -125,10 +125,10 @@ export const articles = [
       "Breakthrough Cancer Vaccine Shows 90% Effectiveness in Global Trials",
     categories: ["Health"],
     date: "2026-04-04",
-    image: "src/images/cancer-vaccine.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "A personalized mRNA cancer vaccine developed by BioNTech has demonstrated 90% effectiveness in preventing tumor recurrence across a 10,000-patient global clinical trial.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>BioNTech has announced results from its largest cancer vaccine trial to date, showing that its personalized mRNA therapeutic vaccine reduces the risk of tumor recurrence by 90% in patients with resectable melanoma, non-small cell lung cancer, and bladder cancer. The Phase 3 trial, which enrolled 10,247 patients across 22 countries over four years, represents the most compelling evidence yet that individualized immunotherapy can fundamentally change the treatment of solid tumors.</p>
  
 <h2>How the Vaccine Works</h2>
@@ -150,10 +150,10 @@ export const articles = [
       "Scientists Discover Thriving Coral Reef System Deep in the Atlantic Ocean",
     categories: ["Ocean"],
     date: "2026-04-03",
-    image: "src/images/deep-atlantic-reef.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "Marine biologists have mapped an enormous coral reef ecosystem 300 meters below the Atlantic's surface, teeming with species previously unknown to science.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>A team of marine scientists from the Woods Hole Oceanographic Institution, in collaboration with researchers from Portugal, Brazil, and France, has announced the discovery of one of the largest deep-water coral reef systems ever documented. Located approximately 300 meters below the surface of the central Atlantic Ocean, the reef complex spans an estimated 3,200 square kilometers — larger than the state of Rhode Island — and harbors a biodiversity that has stunned the scientific community.</p>
  
 <h2>A World Hidden in the Deep</h2>
@@ -174,10 +174,10 @@ export const articles = [
       "Solar Power Officially Becomes the World's Cheapest Source of Energy",
     categories: ["Sustainability", "Energy"],
     date: "2026-04-01",
-    image: "src/images/solar-cheapest-energy.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "The International Energy Agency has confirmed that solar photovoltaic power is now cheaper per kilowatt-hour than coal, gas, and nuclear energy in over 130 countries.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>The International Energy Agency has released its annual World Energy Outlook update, confirming what analysts have long projected: solar photovoltaic power has become the cheapest source of electricity generation in history. In more than 130 countries, new utility-scale solar projects now produce electricity at a lower levelized cost than any fossil fuel or nuclear alternative — a milestone that the IEA's executive director called "the most important energy price signal of the century."</p>
  
 <h2>The Numbers Behind the Milestone</h2>
@@ -199,10 +199,10 @@ export const articles = [
       "Man Discovers 500-Year-Old Viking Sword While Gardening in His Backyard",
     categories: ["Odd"],
     date: "2026-04-05",
-    image: "src/images/viking-sword-garden.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "A retired schoolteacher in rural Norway stumbled upon a remarkably well-preserved Viking sword while turning the soil in his vegetable garden, baffling local archaeologists.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>What began as a quiet Saturday morning of vegetable gardening has turned into a major archaeological discovery. Bjørn Halvorsen, a 67-year-old retired schoolteacher from the small municipality of Ål in Numedal, Norway, unearthed what experts have confirmed to be a Viking-Age sword dating to approximately the late 10th century — in near-pristine condition, buried less than 40 centimeters beneath his raised potato beds.</p>
  
 <h2>An Unexpected Find</h2>
@@ -222,10 +222,10 @@ export const articles = [
       "Scientists Achieve Room-Temperature Superconductivity — A Century-Long Dream Realized",
     categories: ["Breakthroughs"],
     date: "2026-04-04",
-    image: "src/images/superconductivity-breakthrough.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "Researchers at MIT have confirmed stable superconductivity at room temperature using a novel hydrogen-rich compound, a discovery that could revolutionize energy transmission and computing.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>In what is being described as one of the most significant discoveries in the history of condensed matter physics, researchers at the Massachusetts Institute of Technology have announced the first confirmed, reproducible demonstration of superconductivity at room temperature and near-ambient pressure. The result, published Thursday in Nature, has been independently replicated by teams at ETH Zurich and the University of Tokyo — clearing the credibility hurdle that has doomed several previous room-temperature superconductivity claims.</p>
  
 <h2>The Material Behind the Breakthrough</h2>
@@ -245,7 +245,7 @@ export const articles = [
     title: "Google DeepMind's New AI Diagnoses Rare Diseases with 95% Accuracy",
     categories: ["AI", "Health"],
     date: "2026-04-05",
-    image: "src/images/deepmind-diagnosis.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "DeepMind's latest medical AI model can identify over 3,000 rare diseases from patient records and imaging data with a 95% accuracy rate, outperforming specialist physicians in controlled trials.",
     types: ["main", "sidebar"],
@@ -268,7 +268,7 @@ export const articles = [
     title: "AI-Powered Robots Now Handle 40% of Global Warehouse Operations",
     categories: ["AI"],
     date: "2026-04-04",
-    image: "src/images/ai-warehouse-robots.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "A new industry report confirms that autonomous AI-driven robots now manage nearly half of all warehouse logistics worldwide, cutting delivery times by 35% and reducing operational costs significantly.",
     types: ["main", "sidebar"],
@@ -292,10 +292,10 @@ export const articles = [
       "Meta Releases Open-Source AI Model That Rivals GPT-5 in Key Benchmarks",
     categories: ["AI"],
     date: "2026-04-03",
-    image: "src/images/meta-llama-open-source.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "Meta has open-sourced its latest large language model, which matches or exceeds GPT-5 on several industry benchmarks, igniting a new debate around AI safety and open development.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>Meta has released the weights and training code for its latest large language model, Llama 4, under a permissive open-source license — and initial benchmark results suggest the model is competitive with OpenAI's GPT-5 on a significant number of tasks. The release has electrified the AI research community, reignited a fierce debate about whether the benefits of open AI development outweigh its risks, and immediately pressured competitors to reconsider their own release strategies.</p>
  
 <h2>What Llama 4 Can Do</h2>
@@ -315,7 +315,7 @@ export const articles = [
     title: "AI Writing Assistants Now Used by Over 1 Billion People Worldwide",
     categories: ["AI"],
     date: "2026-04-02",
-    image: "src/images/ai-writing-billion-users.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "For the first time in history, AI-powered writing and productivity tools have crossed the one billion active user milestone, reshaping how people work, learn, and communicate globally.",
     types: ["main", "sidebar"],
@@ -337,10 +337,10 @@ export const articles = [
     title: "Pentagon Deploys AI Systems to Detect Cyber Threats in Real Time",
     categories: ["AI"],
     date: "2026-04-01",
-    image: "src/images/pentagon-ai-cyber.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "The U.S. Department of Defense has rolled out an AI-driven cybersecurity platform capable of identifying and neutralizing network intrusions within milliseconds, a major leap in national digital defense.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>The U.S. Department of Defense has officially deployed an AI-powered cybersecurity platform across its classified and unclassified networks, the Pentagon confirmed on Tuesday. The system, developed in partnership with Palantir, Google Cloud's public sector division, and several smaller defense contractors, uses machine learning models running on edge hardware to detect, classify, and in many cases automatically contain network intrusions in under 50 milliseconds — far faster than any human security analyst could respond.</p>
  
 <h2>The Threat Landscape That Prompted the Investment</h2>
@@ -362,10 +362,10 @@ export const articles = [
       "El Salvador Reports $2 Billion Profit from Its Bitcoin Treasury Strategy",
     categories: ["Crypto"],
     date: "2026-04-05",
-    image: "src/images/bild.exempel.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "Five years after making Bitcoin legal tender, El Salvador has announced a $2 billion unrealized profit on its national BTC holdings, vindicating President Bukele's controversial bet on digital assets.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>El Salvador's government has published its quarterly digital asset treasury report, revealing that the country's Bitcoin holdings are now showing an unrealized profit of approximately $2.1 billion — a figure that represents a staggering return on an investment that was widely ridiculed when it was first announced in 2021. President Nayib Bukele, who made El Salvador the first country in history to adopt Bitcoin as legal tender, called the results "proof that patience and conviction beat conventional wisdom."</p>
  
 <h2>The Numbers Behind the Claim</h2>
@@ -384,7 +384,7 @@ export const articles = [
     title: "JPMorgan Launches Its Own Blockchain-Based Settlement Network",
     categories: ["Crypto"],
     date: "2026-04-04",
-    image: "src/images/jpmorgan-blockchain.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "JPMorgan has unveiled a proprietary blockchain settlement network for institutional clients, enabling near-instant cross-border transactions and bypassing traditional correspondent banking infrastructure.",
     types: ["main", "sidebar"],
@@ -408,10 +408,10 @@ export const articles = [
       "Solana Hits New All-Time High as DeFi Volume Surpasses $500 Billion",
     categories: ["Crypto"],
     date: "2026-04-03",
-    image: "src/images/solana-all-time-high.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "Solana has reached a new price record as decentralized finance activity on the network pushes monthly trading volume past the half-trillion-dollar mark for the first time in its history.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>Solana's native token SOL reached a new all-time high of $842 on Thursday, driven by a surge in decentralized finance activity that pushed the network's monthly trading volume past $500 billion for the first time. The milestone cements Solana's position as the second-largest DeFi ecosystem after Ethereum and reflects a broader maturation of the network that has overcome significant technical and reputational challenges since its FTX-era crisis in late 2022.</p>
  
 <h2>The DeFi Surge Driving the Rally</h2>
@@ -431,7 +431,7 @@ export const articles = [
       "SEC Approves First Spot Ethereum ETF Options, Sending Markets Soaring",
     categories: ["Crypto"],
     date: "2026-04-02",
-    image: "src/images/ethereum-etf-sec.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "The U.S. Securities and Exchange Commission has approved options trading on spot Ethereum ETFs, triggering a sharp rally across the broader crypto market and drawing in a new wave of retail investors.",
     types: ["main", "sidebar"],
@@ -454,10 +454,10 @@ export const articles = [
       "G7 Central Banks Agree on Framework for Digital Currency Interoperability",
     categories: ["Crypto"],
     date: "2026-04-01",
-    image: "src/images/g7-cbdc-framework.jpg",
+    image: "src/images/article1.jpg",
     summary:
       "Finance ministers and central bank governors from G7 nations have endorsed a common technical standard for central bank digital currencies, paving the way for seamless cross-border CBDC transactions.",
-    types: ["main"],
+    types: ["main", "sidebar"],
     body: `<p>Finance ministers and central bank governors from the Group of Seven nations have endorsed a joint framework for central bank digital currency interoperability, marking the most significant coordinated step toward a globally connected CBDC infrastructure since the concept first emerged as a policy priority. The agreement, announced following a two-day summit in Tokyo, establishes common technical standards, legal definitions, and regulatory principles that will allow CBDC systems operated by different central banks to communicate with and settle transactions between each other.</p>
  
 <h2>Why Interoperability Matters</h2>

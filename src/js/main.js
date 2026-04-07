@@ -50,8 +50,26 @@ function renderArticles() {
 function renderSidebar() {
   const aiContainer = document.querySelector("#ai-sidebar-cards");
   const cryptoContainer = document.querySelector("#crypto-sidebar-cards");
+  const oddContainer = document.querySelector("#odd-sidebar-cards");
+  const breakthroughContainer = document.querySelector(
+    "#breakthroughs-sidebar-cards",
+  );
+  const spaceContainer = document.querySelector("#space-sidebar-cards");
+  const oceanContainer = document.querySelector("#ocean-sidebar-cards");
+  const energyContainer = document.querySelector("#energy-sidebar-cards");
+  const sustainabilityContainer = document.querySelector(
+    "#sustainability-sidebar-cards",
+  );
 
-  if (!aiContainer || !cryptoContainer) return;
+  if (
+    !aiContainer ||
+    !cryptoContainer ||
+    !oddContainer ||
+    !breakthroughContainer ||
+    !spaceContainer ||
+    !oceanContainer
+  )
+    return;
 
   const aiArticles = articles.filter(
     (a) => a.types.includes("sidebar") && a.categories.includes("AI"),
@@ -79,6 +97,134 @@ function renderSidebar() {
     (a) => a.types.includes("sidebar") && a.categories.includes("Crypto"),
   );
   cryptoContainer.innerHTML = cryptoArticles
+    .map(
+      (article) => `
+    <a href="article.html?id=${article.id}" class="group sidebar-card-link">
+    <article class="sidebar-card">
+    <img src="${article.image}" alt="${article.title}" class="sidebar-img"/>
+    <div class="sidebar-card-content">
+    <p class="sidebar-published"> ${article.date}</p>
+    <h4 class="group-hover:text-brand-accent sidebar-header">
+    <span class="link-underline">${article.title}</span>
+    </h4>
+    </div>
+    </article>
+    </a>
+    `,
+    )
+    .join("");
+
+  const oddArticles = articles.filter(
+    (a) => a.types.includes("sidebar") && a.categories.includes("Odd"),
+  );
+  oddContainer.innerHTML = oddArticles
+    .map(
+      (article) => `
+    <a href="article.html?id=${article.id}" class="group sidebar-card-link">
+    <article class="sidebar-card">
+    <img src="${article.image}" alt="${article.title}" class="sidebar-img"/>
+    <div class="sidebar-card-content">
+    <p class="sidebar-published"> ${article.date}</p>
+    <h4 class="group-hover:text-brand-accent sidebar-header">
+    <span class="link-underline">${article.title}</span>
+    </h4>
+    </div>
+    </article>
+    </a>
+    `,
+    )
+    .join("");
+
+  const breakthroughArticles = articles.filter(
+    (a) =>
+      a.types.includes("sidebar") && a.categories.includes("Breakthroughs"),
+  );
+  breakthroughContainer.innerHTML = breakthroughArticles
+    .map(
+      (article) => `
+    <a href="article.html?id=${article.id}" class="group sidebar-card-link">
+    <article class="sidebar-card">
+    <img src="${article.image}" alt="${article.title}" class="sidebar-img"/>
+    <div class="sidebar-card-content">
+    <p class="sidebar-published"> ${article.date}</p>
+    <h4 class="group-hover:text-brand-accent sidebar-header">
+    <span class="link-underline">${article.title}</span>
+    </h4>
+    </div>
+    </article>
+    </a>
+    `,
+    )
+    .join("");
+
+  const spaceArticles = articles.filter(
+    (a) => a.types.includes("sidebar") && a.categories.includes("Space"),
+  );
+  spaceContainer.innerHTML = spaceArticles
+    .map(
+      (article) => `
+    <a href="article.html?id=${article.id}" class="group sidebar-card-link">
+    <article class="sidebar-card">
+    <img src="${article.image}" alt="${article.title}" class="sidebar-img"/>
+    <div class="sidebar-card-content">
+    <p class="sidebar-published"> ${article.date}</p>
+    <h4 class="group-hover:text-brand-accent sidebar-header">
+    <span class="link-underline">${article.title}</span>
+    </h4>
+    </div>
+    </article>
+    </a>
+    `,
+    )
+    .join("");
+
+  const oceanArticles = articles.filter(
+    (a) => a.types.includes("sidebar") && a.categories.includes("Ocean"),
+  );
+  oceanContainer.innerHTML = oceanArticles
+    .map(
+      (article) => `
+    <a href="article.html?id=${article.id}" class="group sidebar-card-link">
+    <article class="sidebar-card">
+    <img src="${article.image}" alt="${article.title}" class="sidebar-img"/>
+    <div class="sidebar-card-content">
+    <p class="sidebar-published"> ${article.date}</p>
+    <h4 class="group-hover:text-brand-accent sidebar-header">
+    <span class="link-underline">${article.title}</span>
+    </h4>
+    </div>
+    </article>
+    </a>
+    `,
+    )
+    .join("");
+
+  const energyArticles = articles.filter(
+    (a) => a.types.includes("sidebar") && a.categories.includes("Energy"),
+  );
+  energyContainer.innerHTML = energyArticles
+    .map(
+      (article) => `
+    <a href="article.html?id=${article.id}" class="group sidebar-card-link">
+    <article class="sidebar-card">
+    <img src="${article.image}" alt="${article.title}" class="sidebar-img"/>
+    <div class="sidebar-card-content">
+    <p class="sidebar-published"> ${article.date}</p>
+    <h4 class="group-hover:text-brand-accent sidebar-header">
+    <span class="link-underline">${article.title}</span>
+    </h4>
+    </div>
+    </article>
+    </a>
+    `,
+    )
+    .join("");
+
+  const sustainabilityArticles = articles.filter(
+    (a) =>
+      a.types.includes("sidebar") && a.categories.includes("Sustainability"),
+  );
+  sustainabilityContainer.innerHTML = sustainabilityArticles
     .map(
       (article) => `
     <a href="article.html?id=${article.id}" class="group sidebar-card-link">

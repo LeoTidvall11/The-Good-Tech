@@ -13,31 +13,27 @@
   </head>
 
   <body class="bg-brand-cream text-brand-dark font-body">
-    <!-- ===================== HEADER ===================== -->
-    <!-- Top bar containing the site logo, subscribe button, and login button -->
+    <!-- HEADER -->
     <header class="site-header">
-      <!-- Empty spacer — pushes the logo to the center on desktop (flex layout) -->
       <div class="hidden md:block"></div>
 
-      <!-- Site logo / brand name -->
       <div class="header-logo">
-        <h1 class="font-display text-4xl font-black whitespace-nowrap italic">
-          The Good Tech
-        </h1>
+        <a href="index.html">
+          <h1 class="font-display text-4xl font-black whitespace-nowrap italic">
+            The Good Tech
+          </h1>
+        </a>
       </div>
 
-      <!-- Action buttons: Subscribe & Login -->
       <div class="header-actions">
         <button class="btn">Subscribe</button>
         <button class="btn">Login</button>
       </div>
     </header>
-    <!-- ===================== /HEADER ===================== -->
 
-    <!-- ===================== NAVBAR ===================== -->
-    <!-- Sticky navigation bar with a search field and category links -->
+    <!-- NAVBAR -->
     <nav class="site-nav">
-      <!-- Search field — expands on focus via CSS animation -->
+      <!-- Search field — expands on focus -->
       <div class="nav-search">
         <div class="nav-search-icon">
           <svg
@@ -62,65 +58,66 @@
         />
       </div>
 
-      <!-- Category navigation links -->
-      <div class="nav-links">
-        <a href="#" class="nav">AI</a>
-        <a href="#" class="nav">Crypto</a>
-        <a href="#" class="nav">Odd</a>
-        <a href="#" class="nav">Breakthroughs</a>
-        <a href="#" class="nav">Latest</a>
-        <a href="#" class="nav">Happiest</a>
-        <a href="#" class="nav">Sustainability</a>
-        <a href="#" class="nav">Health</a>
-        <a href="#" class="nav">Ocean</a>
-        <a href="#" class="nav">Space</a>
-        <a href="#" class="nav">Environment</a>
-        <a href="#" class="nav">Energy</a>
-        <a href="#" class="nav">About</a>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="nav">AI</a></li>
+        <li><a href="#" class="nav">Crypto</a></li>
+        <li><a href="#" class="nav">Odd</a></li>
+        <li><a href="#" class="nav">Breakthroughs</a></li>
+        <li><a href="#" class="nav">Latest</a></li>
+        <li><a href="#" class="nav">Happiest</a></li>
+        <li><a href="#" class="nav">Sustainability</a></li>
+        <li><a href="#" class="nav">Health</a></li>
+        <li><a href="#" class="nav">Ocean</a></li>
+        <li><a href="#" class="nav">Space</a></li>
+        <li><a href="#" class="nav">Environment</a></li>
+        <li><a href="#" class="nav">Energy</a></li>
+        <li><a href="#" class="nav">About</a></li>
+      </ul>
     </nav>
 
+    <!-- MAIN — two-column: article + sidebar -->
     <main class="main-layout">
+      <!-- ARTICLE — by article.js via ?id= param -->
       <div id="article-categories" class="articles-section">
+        <!-- Back button -->
         <a
           href="index.html"
-          class="btn bg-brand-dark/60 backdrop-blur-sm fixed bottom-6 left-1/2 -translate-x-1/2"
-"
+          class="btn bg-brand-dark/60 fixed bottom-6 left-1/2 -translate-x-1/2 backdrop-blur-sm"
         >
-          ← Tillbaka till start
+          ← Back to home
         </a>
-        <h1 id="article-title" ...></h1>
+        <div class="relative">
+          <img
+            id="article-image"
+            src=""
+            alt=""
+            class="mb-8 rounded-3xl shadow-lg"
+          />
+          <div
+            id="article-badges"
+            class="absolute top-3 left-3 mb-8 flex flex-wrap gap-1"
+          ></div>
+        </div>
+        <p id="article-date" class="card-published mb-2"></p>
         <h1
           id="article-title"
           class="font-display mb-4 text-2xl font-bold md:text-6xl"
         ></h1>
-        <p id="article-date" class="card-published mb-2"></p>
-        <div id="article-badges" class="mb-8 flex flex-wrap gap-2"></div>
-
-        <img
-          id="article-image"
-          src=""
-          alt=""
-          class="mb-8 w-full rounded-3xl object-cover shadow-lg"
-        />
 
         <div
           id="article-content"
           class="prose lg:prose-xl prose-brand-dark prose-headings:font-display prose-a:text-brand-accent prose-a:underline prose-a:decoration-brand-accent prose-a:decoration-2 prose-a:underline-offset-4 max-w-none"
         ></div>
       </div>
-      <!-- ---- SIDEBAR ---- -->
-      <!-- Category panel with compact article links, grouped by topic -->
+
+      <!-- SIDEBAR -->
       <aside class="sidebar-layout">
         <h2 class="sidebar-title">Categories</h2>
         <p class="sidebar-subtitle">Browse news by category.</p>
 
-        <!-- AI Highlights -->
         <div>
           <div class="sidebar-category-label">AI Highlights</div>
-          <div id="ai-sidebar-cards" class="sidebar-cards">
-            <!-- /Sidebar card 1 -->
-          </div>
+          <div id="ai-sidebar-cards" class="sidebar-cards"></div>
           <a href="#" class="group sidebar-view-all">
             View all AI Highlights
             <svg
@@ -140,9 +137,10 @@
           </a>
         </div>
 
-        <!-- Crypto Highlights -->
         <div>
-          <div class="sidebar-category-label">Crypto Highlights</div>
+          <div class="sidebar-category-label bg-cat-crypto">
+            Crypto Highlights
+          </div>
           <div id="crypto-sidebar-cards" class="sidebar-cards"></div>
           <a href="#" class="group sidebar-view-all">
             View all Crypto Highlights
@@ -162,13 +160,155 @@
             </svg>
           </a>
         </div>
+
+        <div>
+          <div class="sidebar-category-label bg-cat-odd">Odd Highlights</div>
+          <div id="odd-sidebar-cards" class="sidebar-cards"></div>
+          <a href="#" class="group sidebar-view-all hover:bg-cat-odd">
+            View all Odd Highlights
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="card-svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div>
+          <div class="sidebar-category-label bg-cat-breakthroughs">
+            Breakthroughs Highlights
+          </div>
+          <div id="breakthroughs-sidebar-cards" class="sidebar-cards"></div>
+          <a href="#" class="group sidebar-view-all hover:bg-cat-breakthroughs">
+            View all Breakthroughs Highlights
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="card-svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div>
+          <div class="sidebar-category-label bg-cat-sustainability">
+            Sustainability Highlights
+          </div>
+          <div id="sustainability-sidebar-cards" class="sidebar-cards"></div>
+          <a
+            href="#"
+            class="group sidebar-view-all hover:bg-cat-sustainability"
+          >
+            View all Sustainability Highlights
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="card-svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div>
+          <div class="sidebar-category-label bg-cat-ocean">
+            Ocean Highlights
+          </div>
+          <div id="ocean-sidebar-cards" class="sidebar-cards"></div>
+          <a href="#" class="group sidebar-view-all hover:bg-cat-ocean">
+            View all Ocean Highlights
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="card-svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div>
+          <div class="sidebar-category-label bg-cat-space">
+            Space Highlights
+          </div>
+          <div id="space-sidebar-cards" class="sidebar-cards"></div>
+          <a href="#" class="group sidebar-view-all hover:bg-cat-space">
+            View all Space Highlights
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="card-svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div>
+          <div class="sidebar-category-label bg-cat-energy">
+            Energy Highlights
+          </div>
+          <div id="energy-sidebar-cards" class="sidebar-cards"></div>
+          <a href="#" class="group sidebar-view-all hover:bg-cat-energy">
+            View all Energy Highlights
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="card-svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
       </aside>
-      <!-- ---- /SIDEBAR ---- -->
     </main>
-    <!-- ===================== /MAIN CONTENT ===================== -->
 
-    <!-- ===================== Footer ===================== -->
-
+    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="footer-internal">
         <p>&copy; 2026 The Good Tech. All rights reserved.</p>
@@ -204,6 +344,5 @@
         </a>
       </div>
     </footer>
-    <!-- ===================== /Footer ===================== -->
   </body>
 </html>
