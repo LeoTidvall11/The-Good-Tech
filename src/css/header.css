@@ -1,11 +1,7 @@
 @layer components {
-  /* _____ Button & Nav Link Styles _____ */
+  /* _____ Button  _____ */
   .btn {
     @apply bg-brand-dark hover:bg-brand-cream hover:text-brand-accent text-brand-cream hover:border-brand-accent rounded-3xl px-4 py-2 text-sm font-medium transition-all;
-  }
-
-  .nav {
-    @apply hover:bg-brand-cream/30 snap-center rounded-lg px-4 py-2 transition-colors;
   }
 
   /* _____ Header Styles _____ */
