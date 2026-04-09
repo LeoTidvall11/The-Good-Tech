@@ -1,7 +1,7 @@
 @layer components {
   /* _____ Sidebar Layout Styles _____ */
   .sidebar-layout {
-    @apply flex flex-col gap-8 lg:col-span-4;
+    @apply flex flex-col gap-8 self-start md:col-span-4;
   }
 
   .sidebar-title {
@@ -17,7 +17,11 @@
   }
 
   .sidebar-cards {
-    @apply mt-2 flex snap-x gap-4 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] lg:flex-col lg:overflow-visible lg:pb-0 [&::-webkit-scrollbar]:hidden;
+    @apply border-brand-beige mt-2 flex snap-x gap-4 overflow-x-auto rounded-xl border bg-white p-3 pb-4 shadow-sm md:max-h-71 md:flex-col md:overflow-x-hidden md:overflow-y-auto md:pr-2;
+  }
+  .sidebar-cards::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
   }
 
   .sidebar-card-link {
@@ -26,6 +30,10 @@
 
   .sidebar-view-all {
     @apply bg-brand-cream hover:bg-brand-yellow my-2 inline-flex items-center gap-2 rounded-lg px-7 py-2 text-sm font-bold transition-colors;
+  }
+
+  .sidebar-view-all-categories {
+    @apply bg-brand-dark text-brand-cream hover:bg-brand-yellow hover:text-brand-dark mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl px-7 py-3 text-sm font-bold transition-colors;
   }
 
   .sidebar-card-content {

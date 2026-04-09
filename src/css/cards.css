@@ -1,12 +1,12 @@
 @layer components {
   /* _____ Layout Styles _____ */
   .main-layout {
-    @apply isolate mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-8 md:grid-cols-12;
+    @apply isolate mx-auto grid max-w-7xl grid-cols-1 items-start gap-8 px-4 py-8 md:grid-cols-12;
   }
 
   /* _____ Card Section Styles _____ */
   .articles-section {
-    @apply flex flex-col items-center md:col-span-12 lg:col-span-8;
+    @apply flex flex-col items-center md:col-span-8;
   }
 
   .section-title {
