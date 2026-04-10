@@ -9,6 +9,8 @@
 @import "./categories.css";
 @import "./footer.css";
 
+@source inline("bg-cat-{ai,crypto,space,health,ocean,sustainability,energy,odd,breakthroughs}");
+
 @theme {
   --font-display: "Fraunces", serif;
   --font-body: "Inter", sans-serif;

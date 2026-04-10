@@ -10,7 +10,11 @@
   }
 
   .header-logo {
-    @apply flex md:justify-center;
+    @apply flex min-w-0 shrink md:justify-center;
+
+    & h1 {
+      @apply text-2xl md:text-4xl;
+    }
   }
 
   .header-actions {

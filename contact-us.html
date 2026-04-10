@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | The Good Tech</title>
+    <script type="module" src="/src/js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-brand-cream text-brand-dark font-body">
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header">
+      <!-- Empty spacer — pushes the logo to the center on desktop  -->
+      <div class="hidden md:block"></div>
+
+      <!-- Site logo / brand name -->
+      <div class="header-logo">
+        <a href="index.html">
+          <h1 class="font-display font-black whitespace-nowrap italic">
+            The Good Tech
+          </h1>
+        </a>
+      </div>
+
+      <!-- Action buttons: Subscribe & Login -->
+      <div class="header-actions">
+        <button class="btn">Subscribe</button>
+        <button class="btn">Login</button>
+      </div>
+    </header>
+    <!-- ===================== /HEADER ===================== -->
+
+    <!-- ===================== NAVBAR ===================== -->
+    <!-- Sticky navigation bar with a search field and category links -->
+    <nav class="site-nav">
+      <!-- Search field — expands on focus via CSS animation -->
+      <div class="nav-search">
+        <div class="nav-search-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </div>
+        <input
+          type="text"
+          placeholder="Search for good news..."
+          class="nav-search-input"
+        />
+      </div>
+
+      <!-- Category navigation links -->
+      <ul class="nav-links">
+        <li><a href="categories.html#cat-AI" class="nav">AI</a></li>
+        <li><a href="categories.html#cat-Crypto" class="nav">Crypto</a></li>
+        <li><a href="categories.html#more-cat-Odd" class="nav">Odd</a></li>
+        <li>
+          <a href="categories.html#more-cat-Breakthroughs" class="nav"
+            >Breakthroughs</a
+          >
+        </li>
+        <li>
+          <a href="categories.html#more-cat-Sustainability" class="nav"
+            >Sustainability</a
+          >
+        </li>
+        <li>
+          <a href="categories.html#more-cat-Health" class="nav">Health</a>
+        </li>
+        <li><a href="categories.html#more-cat-Ocean" class="nav">Ocean</a></li>
+        <li><a href="categories.html#more-cat-Space" class="nav">Space</a></li>
+        <li>
+          <a href="categories.html#more-cat-Energy" class="nav">Energy</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ===================== /NAVBAR ===================== -->
+
+    <main class="text-brand-dark mx-auto max-w-4xl px-6 py-16">
+      <!-- Page heading -->
+      <div class="mb-12 text-center">
+        <h2 class="font-display mb-4 text-5xl font-black italic">Contact Us</h2>
+        <p class="mx-auto max-w-xl text-lg">
+          Have a tip, a question, or anything that might be of our interest?
+          We’d love to hear from you! Fill out the form below or use the contact
+          details provided, and we’ll get back to you as soon as we can.
+        </p>
+      </div>
+
+      <div class="grid gap-12 md:grid-cols-2">
+        <!-- Contact form -->
+        <section>
+          <h3 class="font-display mb-6 text-2xl font-bold italic">
+            Send a Message
+          </h3>
+          <form class="flex flex-col gap-4">
+            <div class="flex flex-col gap-1">
+              <label class="text-sm" for="name">Name</label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Your name"
+                class="border-brand-dark focus:ring-brand-dark rounded-lg border bg-white px-4 py-3 focus:ring-2 focus:outline-none"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label class="text-sm font-semibold" for="email"
+                >Email address</label
+              >
+              <input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                class="border-brand-dark focus:ring-brand-dark rounded-lg border bg-white px-4 py-3 focus:ring-2 focus:outline-none"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label class="text-sm font-semibold" for="subject">Subject</label>
+              <input
+                id="subject"
+                type="text"
+                placeholder="What's it about?"
+                class="border-brand-dark focus:ring-brand-dark rounded-lg border bg-white px-4 py-3 focus:ring-2 focus:outline-none"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label class="text-sm font-semibold" for="message">Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Write your message here..."
+                class="border-brand-dark focus:ring-brand-dark/30 resize-none rounded-lg border bg-white px-4 py-3 focus:ring-2 focus:outline-none"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn mt-2 self-start px-8 py-3">
+              Send Message
+            </button>
+          </form>
+        </section>
+
+        <!-- Contact info -->
+        <section class="flex flex-col gap-8">
+          <div>
+            <h3 class="font-display mb-6 text-2xl font-bold italic">
+              Get in Touch
+            </h3>
+            <ul class="text-brand-dark flex flex-col gap-5">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-envelope text-brand-dark mt-1"></i>
+                <div>
+                  <p class="font-semibold">Email</p>
+                  <p>hello@thegoodtech.news</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-newspaper text-brand-dark mt-1"></i>
+                <div>
+                  <p class="font-semibold">News Tips</p>
+                  <p>
+                    Spotted a positive tech story we should cover? Send your tip
+                    to tips@thegoodtech.news and we'll look into it.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-handshake text-brand-dark mt-1"></i>
+                <div>
+                  <p class="font-semibold">Partnerships & Advertising</p>
+                  <p>partners@thegoodtech.news</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social links -->
+          <div>
+            <h4 class="mb-3 font-semibold">Follow us</h4>
+            <div class="flex gap-4 text-2xl">
+              <a
+                href="https://github.com/LeoTidvall11/The-Good-Tech.git"
+                target="_blank"
+                class="social-icons"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="social-icons"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/leo-tidvall"
+                target="_blank"
+                class="social-icons"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Response time note -->
+          <p class="text-brand-dark border-brand-dark border-t pt-6">
+            We typically respond within 1–2 business days. Thank you for your
+            patience!
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+
+    <footer class="site-footer">
+      <div class="footer-internal">
+        <p>&copy; 2026 The Good Tech. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="terms-of-service.html" class="footer-link"
+            >Terms of Service</a
+          >
+          <a href="contact-us.html" class="footer-link">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a
+          href="https://github.com/LeoTidvall11/The-Good-Tech.git"
+          target="_blank"
+          class="social-icons"
+        >
+          <i class="fa-brands fa-github text-xl"></i>
+        </a>
+
+        <a href="https://facebook.com/" target="_blank" class="social-icons">
+          <i class="fa-brands fa-facebook text-xl"></i>
+        </a>
+
+        <a
+          href="https://linkedin.com/in/leo-tidvall"
+          target="_blank"
+          class="social-icons"
+        >
+          <i class="fa-brands fa-linkedin text-xl"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- ===================== /Footer ===================== -->
+  </body>
+</html>
