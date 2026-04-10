@@ -33,7 +33,7 @@
   }
 
   .sidebar-view-all-categories {
-    @apply bg-brand-dark text-brand-cream hover:bg-brand-yellow hover:text-brand-dark mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl px-7 py-3 text-sm font-bold transition-colors;
+    @apply bg-brand-dark text-brand-cream hover:bg-brand-yellow hover:text-brand-dark sticky top-0 mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl px-7 py-3 text-sm font-bold transition-colors;
   }
 
   .sidebar-card-content {

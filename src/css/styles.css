@@ -6,6 +6,7 @@
 @import "./navbar.css";
 @import "./cards.css";
 @import "./sidebar.css";
+@import "./categories.css";
 @import "./footer.css";
 
 @theme {

@@ -1,0 +1,35 @@
+@layer components {
+  .articles-section-categories {
+    @apply px-4;
+  }
+
+  .categories-scroll-section::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  /* _____ More Categories Grid _____ */
+  .more-categories-section {
+    @apply px-4 py-6;
+  }
+
+  .more-categories-heading {
+    @apply font-display text-brand-dark mb-6 text-3xl font-bold lg:text-4xl;
+  }
+
+  .more-categories-grid {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+
+  .more-categories-item {
+    @apply flex flex-col gap-3;
+
+    & > a {
+      @apply flex flex-1;
+    }
+  }
+
+  .categories-label {
+    @apply font-display text-brand-cream border-brand-dark m-3 w-fit rounded-full border px-4 py-1 text-xl font-bold;
+  }
+}

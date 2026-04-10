@@ -64,74 +64,51 @@
 
       <!-- Category navigation links -->
       <ul class="nav-links">
-        <li><a href="#" class="nav">AI</a></li>
-        <li><a href="#" class="nav">Crypto</a></li>
-        <li><a href="#" class="nav">Odd</a></li>
-        <li><a href="#" class="nav">Breakthroughs</a></li>
-        <li><a href="#" class="nav">Latest</a></li>
-        <li><a href="#" class="nav">Happiest</a></li>
-        <li><a href="#" class="nav">Sustainability</a></li>
-        <li><a href="#" class="nav">Health</a></li>
-        <li><a href="#" class="nav">Ocean</a></li>
-        <li><a href="#" class="nav">Space</a></li>
-        <li><a href="#" class="nav">Energy</a></li>
-        <li><a href="#" class="nav">About</a></li>
+        <li><a href="#cat-AI" class="nav">AI</a></li>
+        <li><a href="#cat-Crypto" class="nav">Crypto</a></li>
+        <li><a href="#more-cat-Odd" class="nav">Odd</a></li>
+        <li><a href="#more-cat-Breakthroughs" class="nav">Breakthroughs</a></li>
+        <li>
+          <a href="#more-cat-Sustainability" class="nav">Sustainability</a>
+        </li>
+        <li><a href="#more-cat-Health" class="nav">Health</a></li>
+        <li><a href="#more-cat-Ocean" class="nav">Ocean</a></li>
+        <li><a href="#more-cat-Space" class="nav">Space</a></li>
+        <li><a href="#more-cat-Energy" class="nav">Energy</a></li>
       </ul>
     </nav>
     <!-- ===================== /NAVBAR ===================== -->
 
-    <main class="grid grid-cols-1 gap-8 overflow-x-auto p-4 md:p-8">
+    <main class="flex flex-col">
+      <a
+        href="index.html"
+        class="btn bg-brand-dark/60 fixed bottom-6 left-1/2 z-10 -translate-x-1/2 backdrop-blur-sm"
+      >
+        ← Back to home
+      </a>
       <!-- ---- ARTICLE SECTION ---- -->
-      <div class="article-category-header">
-        <h2 class="text-2xl font-bold">AI</h2>
-        <a href="#" class="text-brand-blue text-sm hover:underline"
-          >See all AI news</a
-        >
+      <div
+        class="articles-section-categories categories-scroll-section flex flex-col"
+      >
+        <h2 id="cat-AI" class="categories-label bg-cat-ai">AI</h2>
         <div
           id="categories-carousel-AI"
           class="categories-carousel flex gap-3 overflow-x-auto py-4"
         ></div>
       </div>
       <div
-        id="categories-carousel-Crypto"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
-      <div
-        id="categories-carousel-Odd"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
-      <div
-        id="categories-carousel-Breakthroughs"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
-      <div
-        id="categories-carousel-Latest"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
-      <div
-        id="categories-carousel-Happiest"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
-      <div
-        id="categories-carousel-Sustainability"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
-      <div
-        id="categories-carousel-Health"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
-      <div
-        id="categories-carousel-Ocean"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
-      <div
-        id="categories-carousel-Space"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
-      <div
-        id="categories-carousel-Energy"
-        class="categories-carousel flex gap-3 overflow-x-auto py-4"
-      ></div>
+        class="articles-section-categories categories-scroll-section flex flex-col"
+      >
+        <h2 id="cat-Crypto" class="categories-label bg-cat-crypto">Crypto</h2>
+        <div
+          id="categories-carousel-Crypto"
+          class="categories-carousel flex gap-3 overflow-x-auto py-4"
+        ></div>
+      </div>
+      <div class="more-categories-section">
+        <h2 class="more-categories-heading">More Categories</h2>
+        <div id="more-categories-grid" class="more-categories-grid"></div>
+      </div>
     </main>
 
     <!-- ===================== Footer ===================== -->
