@@ -245,7 +245,7 @@ export const articles = [
     title: "Google DeepMind's New AI Diagnoses Rare Diseases with 95% Accuracy",
     categories: ["AI", "Health"],
     date: "2026-04-05",
-    image: "src/images/ai-95%-accuracy.png",
+    image: "src/images/ai-95-accuracy.png",
     summary:
       "DeepMind's latest medical AI model can identify over 3,000 rare diseases from patient records and imaging data with a 95% accuracy rate, outperforming specialist physicians in controlled trials.",
     types: ["main", "sidebar"],
